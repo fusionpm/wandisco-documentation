@@ -11,6 +11,26 @@ This quickstart helps you create an Azure Linux Virtual Machine (VM) suitable fo
 * Creating the [Linux VM with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-cli-complete).
   * Logging in to the VM for the first time.
 
+This is an alternative to using the Azure portal to create a VM. If you prefer to use the portal, see the [Using the Azure portal](#using-the-azure-portal) section below for an outline of what you will need.
+
+## Using the Azure portal
+
+If you want to use the Azure portal instead of following this guide, then you will need to ensure that you have suitable resources available:
+
+* [Azure subscription](https://azure.microsoft.com/)
+* [Resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) to contain the Azure VM.
+* [VNet/Subnet](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) for your chosen Azure region.
+
+The VM will also need to meet certain specifications:
+
+* Recommended Operating System = **Ubuntu 18.04 LTS**.
+* Minimum size recommendation = **Standard D4 v3** (4 vcpus, 16 GiB memory).
+* Minimum disk space for Operating System (OS) = **32 GB**.
+  * If creating your VM through the Azure portal (and not via our [guide](../preparation/azure_vm_creation.md)), you may have insufficient disk space by default. See the [Microsoft docs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/expand-os-disk) for further info.
+  * The use of ephemeral OS disks are not recommended as data may not be persisted after shutting down the VM.
+
+Once you have created the VM, see the [VM Preparation guide](./vm_prep.md) for help installing the required services.
+
 ## Prerequisites
 
 * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) with the ability to run `az login` on your terminal.
@@ -162,6 +182,8 @@ _Example output_
    ```
 
 You can now log in to your Azure VM, for example `ssh vm_user@172.10.1.10`.
+
+If you are unable to log in to your VM, you may need admin asssitance with your network configuration. See our [general troubleshooting](../troubleshooting/general_troubleshooting.md#unable-to-access-ambari,-cloudera-or-fusion-ui-on-vm) section for more detail.
 
 ##  References
 

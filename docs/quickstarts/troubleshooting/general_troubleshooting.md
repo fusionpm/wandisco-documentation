@@ -54,7 +54,7 @@ Depending on how your Network IP or DNS hostname resolution is set up for your A
 
 These services require you to access them on a standard port such as 8080 (Ambari), 7180 (Cloudera) or 8081 (Fusion UI), for example:
 
-`http://<VM_IP_ADDRESS>:8081`
+`http://<vm_ip_address>:8081`
 
 You may experience issues sooner if you are unable to log in to your Azure VM via SSH (this uses the standard port 22).
 

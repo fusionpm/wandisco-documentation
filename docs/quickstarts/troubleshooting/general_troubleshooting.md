@@ -46,6 +46,8 @@ If the Fusion zones are not inducted together after starting Fusion for the firs
 
 `docker-compose up -d`
 
+## Azure specific
+
 ### Unable to access Ambari, Cloudera or Fusion UI on VM
 
 Depending on how your Network IP or DNS hostname resolution is set up for your Azure environment, you may experience issues when trying to access hosted services on the VM.

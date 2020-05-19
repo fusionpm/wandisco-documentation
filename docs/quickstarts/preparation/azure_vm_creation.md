@@ -183,7 +183,7 @@ _Example output_
 
 You can now log in to your Azure VM, for example `ssh vm_user@172.10.1.10`.
 
-If you are unable to log in to your VM, you may need admin asssitance with your network configuration. See our [general troubleshooting](../troubleshooting/general_troubleshooting.md#unable-to-access-ambari,-cloudera-or-fusion-ui-on-vm) section for more detail.
+If you are unable to log in to your VM, you may need admin asssitance with your network configuration. See our [Azure specific troubleshooting](../troubleshooting/general_troubleshooting.md#unable-to-access-ambari-cloudera-or-fusion-ui-on-vm) section for more detail.
 
 ##  References
 

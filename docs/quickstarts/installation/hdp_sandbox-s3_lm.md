@@ -132,8 +132,6 @@ _You have now successfully migrated data from your HDP Sandbox to your AWS S3 bu
 
 ## Troubleshooting
 
-* If you are unable to access the Ambari or Fusion UI, you may need admin asssitance with your network configuration. See our [general troubleshooting](../troubleshooting/general_troubleshooting.md#unable-to-access-ambari,-cloudera-or-fusion-ui-on-vm) section for more detail.
-
 * See our [Troubleshooting](../troubleshooting/general_troubleshooting.md) guide for help.
 
 * See the [shutdown and start up](../operation/hdp_sandbox_fusion_stop_start.md) guide for when you wish to safely shutdown or start back up the environment.

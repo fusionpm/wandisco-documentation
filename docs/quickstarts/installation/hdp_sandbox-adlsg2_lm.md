@@ -149,7 +149,7 @@ _Contact [WANdisco](https://wandisco.com/contact) for further information about 
 
 ## Troubleshooting
 
-* If you are unable to access the Ambari or Fusion UI, you may need admin asssitance with your network configuration. See our [general troubleshooting](../troubleshooting/general_troubleshooting.md#unable-to-access-ambari,-cloudera-or-fusion-ui-on-vm) section for more detail.
+* If you are unable to access the Ambari or Fusion UI, you may need admin asssitance with your network configuration. See our [Azure specific troubleshooting](../troubleshooting/general_troubleshooting.md#unable-to-access-ambari-cloudera-or-fusion-ui-on-vm) section for more detail.
 
 * See our [Troubleshooting](../troubleshooting/general_troubleshooting.md) guide for help.
 

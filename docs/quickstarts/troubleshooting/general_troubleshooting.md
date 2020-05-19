@@ -58,6 +58,6 @@ These services require you to access them on a standard port such as 8080 (Ambar
 
 You may experience issues sooner if you are unable to log in to your Azure VM via SSH (this uses the standard port 22).
 
-If you cannot access these services or log in to your VM, you may need admin asssitance from whoever manages your Azure environment/subscription. See the Microsoft docs for more info:
+If you cannot access these services or log in to your VM, you may need admin assistance from whoever manages your Azure environment/subscription. See the Microsoft docs for more info:
 
 * [IP address types and allocation methods in Azure](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-ip-addresses-overview-arm)

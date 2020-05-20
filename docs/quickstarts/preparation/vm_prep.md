@@ -23,6 +23,8 @@ _These instructions have been tested on Ubuntu 18.04 LTS._
 
 ## Preparation
 
+The commands given in this section assume that you are running as root user. If you encounter `Permission denied` errors when running these commands, see our [general troubleshooting](../troubleshooting/general_troubleshooting.md#permissed-denied-when-installing-packages-or-services) section.
+
 ### Install services
 
 1. Log in to the VM via a terminal session.

@@ -159,8 +159,8 @@ Your Databricks cluster must be **running** before testing Hive replication. Sam
 
    `http://<docker_IP_address>:8888`
 
-   Username: `hdfs`
-   Password: `hdfs`
+   Username: `admin`
+   Password: `admin`
 
 1. To create a database for the sample data, add the query below inside the **Hive** box and click the **play** button:
 

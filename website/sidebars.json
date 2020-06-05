@@ -49,6 +49,11 @@
     "Installation": [
       "quickstarts/installation/quickstart-config",
       "quickstarts/installation/adlsg1-adlsg2",
+      "quickstarts/installation/cdh_sandbox-adlsg2_lm",
+      "quickstarts/installation/cdh_sandbox-adlsg2_ld",
+      "quickstarts/installation/cdh_sandbox_lhv_client-adlsg2_lan",
+      "quickstarts/installation/cdh_sandbox-s3_lm",
+      "quickstarts/installation/cdh_sandbox-s3_ld",
       "quickstarts/installation/hdp_sandbox_adlsg2_lm",
       "quickstarts/installation/hdp_sandbox_adlsg2_ld",
       "quickstarts/installation/hdp_sandbox_lhv_client-adlsg2_lan",
@@ -65,6 +70,7 @@
       "quickstarts/operation/hdp_sandbox_fusion_stop_start"
     ],
     "Testing": [
+      "quickstarts/testing/test_cdh_sandbox",
       "quickstarts/testing/test_hdp_sandbox"
     ],
     "Troubleshooting": [

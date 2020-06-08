@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Core Platform &amp; DConE · WANdisco docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Core Platform"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Core Platform &amp; DConE · WANdisco docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://wandisco.github.io/wandisco-documentation/ https://wandisco.github.io/wandisco-documentation/"/><meta property="og:description" content="## Core Platform"/><meta property="og:image" content="https://wandisco.github.io/wandisco-documentation/ https://wandisco.github.io/wandisco-documentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://wandisco.github.io/wandisco-documentation/ https://wandisco.github.io/wandisco-documentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="https://wandisco.github.io/wandisco-documentation/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://wandisco.github.io/wandisco-documentation/js/scrollSpy.js"></script><link rel="stylesheet" href="https://wandisco.github.io/wandisco-documentation/css/main.css"/><script src="https://wandisco.github.io/wandisco-documentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://wandisco.github.io/wandisco-documentation/"><img class="logo" src="https://wandisco.github.io/wandisco-documentation/img/favicon.png" alt="WANdisco docs"/><h2 class="headerTitleWithLogo">WANdisco docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/benefits" target="_self">Why Fusion?</a></li><li class=""><a href="https://wandisco.github.io/wandisco-documentation/docs/quickstarts/installation/quickstart-config" target="_self">Quickstarts</a></li><li class=""><a href="https://wandisco.github.io/wandisco-documentation/docs/docs/doc1" target="_self">Docs</a></li><li class=""><a href="https://wandisco.github.io/wandisco-documentation/docs/glossary/a" target="_self">Glossary</a></li><li class=""><a href="https://wandisco.github.io/wandisco-documentation/docs/help/need_help" target="_self">Help</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Product Concepts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Product Concepts<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/benefits">Benefits</a></li><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/features">Features</a></li><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/deployment_models">Deployment models</a></li><li class="navListItem navListItemActive"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/core_platform_and_dcone">Core Platform &amp; DConE</a></li><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/concepts_replication_rules">Replication Rules</a></li><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/concepts_consistency_checks">Consistency Checks</a></li><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/migration_replication">Migration vs. Replication</a></li><li class="navListItem"><a class="navItem" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/hive_replication">Hive Replication &amp; Databricks Integration</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Core Platform &amp; DConE</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="core-platform"></a><a href="#core-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Core Platform</h2>
+<p>Keeping data consistent in a distributed environment is a massive challenge. WANdisco Fusion, an enterprise-class software platform, solves the exponentially growing challenge of keeping unstructured data available across diverse IT environments regardless of geographic location, architecture, or cloud storage provider.</p>
+<p>WANdisco Fusion is a foundation for a modern cloud data strategy — a LiveData strategy — because it prevents data disasters, de-risks data migration to the cloud, and simplifies hybrid cloud data management.</p>
+<h2><a class="anchor" aria-hidden="true" id="distributed-coordination-engine-dcone"></a><a href="#distributed-coordination-engine-dcone" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Distributed Coordination Engine (DConE)</h2>
+<p><strong>What is DConE and how is it different?</strong></p>
+<p>WANdisco Fusion is powered by DConE, which is a high-performance, coordination engine able to work across wide-area networks. The technology uses distributed consensus to guarantee data consistency.</p>
+<p>Traditional approaches to data replication are batch-based, do not guarantee data consistency, and cannot operate over wide-area networks or the public internet. Unlike other technologies which move data from one location to another, WANdisco Fusion uses DConE to coordinate distributed changes to data, enabling shared access to common data sets.</p>
+<p>The technology works by applying a mathematically-proven approach to consensus, which works regardless of the distance between data sources or types of data storage.</p>
+<p>For more information on DConE, read our <a href="https://wandisco.com/storage/app/media/pages/support/documentation/downloads/WANdisco_DConE_White_Paper.pdf">whitepaper</a> or the <a href="https://wandisco.com/platform/dcone">WANdisco website</a>.</p>
+<p><strong>How does it work?</strong></p>
+<p>DConE’s Output Proposal Sequence delivers agreed values in strict sequence, one-at-a-time, to an application. Applying these values to the application state using the output proposal sequence ensures the state is consistent with other replicas at that point in the sequence.</p>
+<p><strong>How is it optimized?</strong></p>
+<p>If two or more values do not interfere with one another they may be applied in parallel without adverse effects. This parallelization has several benefits, for example:</p>
+<ul>
+<li>It may increase the rate of agreed values applied to the application state if there are many non-interfering agreements.</li>
+<li>It avoids an agreement that takes a long time to complete (such as a large file transfer) from blocking later agreements that are not dependent on that agreement having completed.</li>
+</ul>
+<p><em>Example</em></p>
+<p>Consider the following global sequence, where <code>/repl1</code> is the replicated directory:</p>
+<ol>
+<li>Copy 10TB file to <code>/repl1/dir1/file1</code></li>
+<li>Copy 10TB file to <code>/repl1/dir2/file1</code></li>
+<li>Change ownership of <code>/repl/dir1</code></li>
+</ol>
+<p>Agreements 1 and 2 may be executed in parallel since they do not interfere with one another.</p>
+<p>However, agreement 3 must wait for agreement 1 to complete before it can be applied to the filesystem.</p>
+<p>If agreement 2 completes before 1, then its operation will be recorded before the preceding agreement.</p>
+<p>At a glance, this could seem like an out-of-order filesystem operation, but it is a part of DConE's optimization of events.</p>
+<p><strong>How does it recover from outages?</strong></p>
+<p>During replication, in the event that the Wide Area Network (WAN) link is temporarily dropped, recovery will occur automatically once the link is re-established. All Fusion nodes in the replicated ecosystem will communicate the proposal number they are currently on, and continue from the highest numbered proposal. This prevents any repeat of transactions that have already occurred prior to the link outage.</p>
+<p>If a Fusion node experiences an outage, once it comes online again, it will automatically be informed of any transactions already processed by the rest of the nodes in the replicated ecosystem.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/deployment_models"><span class="arrow-prev">← </span><span>Deployment models</span></a><a class="docs-next button" href="https://wandisco.github.io/wandisco-documentation/docs/why-fusion/concepts_replication_rules"><span>Replication Rules</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#core-platform">Core Platform</a></li><li><a href="#distributed-coordination-engine-dcone">Distributed Coordination Engine (DConE)</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="https://wandisco.github.io/wandisco-documentation/" class="nav-home"></a><div><h5>Docs</h5><a href="https://wandisco.github.io/wandisco-documentation/docs/en/quickstarts/quickstart-config.html">Getting Started</a><a href="https://docs.wandisco.com">Product User Guides</a><a href="https://community.wandisco.com/s/knowledge-base">Knowledge Base</a></div><div><h5>Community</h5><a href="https://community.wandisco.com/">WANdisco Community</a><a href="//wandisco.com/partners/find">Partners</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://wandisco.com/blog">Blog</a><a href="https://blogs.wandisco.com/">Developer Blog</a><a href="https://github.com/wandisco">GitHub</a></div></section><section class="copyright">Copyright © 2020 WANdisco, Inc.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '56e573413aa88e9ec072a585bec45683',
+                indexName: 'wandisco',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

@@ -15,7 +15,7 @@ What this guide will cover:
 If you would like to try something different with the HDP Sandbox, see:
 
 * [Migration of data to ADLS Gen2](./hdp_sandbox-adlsg2_lm.md)
-* [Live replication of data/metadata to Databricks](./hdp_sandbox_lhv_client-adlsg2_lan.md)
+* [Live replication of data/Hive metadata to Databricks](./hdp_sandbox_lhv_client-adlsg2_lan.md)
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ To complete this install, you will need:
 * ADLS Gen2 storage account with [hierarchical namespace](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace) enabled.
   * You will also need a container created inside this account.
 * Azure Virtual Machine (VM).
-  * Minimum size recommendation = **Standard D4 v3 (4 vcpus, 16 GiB memory).**
+  * Minimum size recommendation = **8 vcpus, 32 GiB memory** (e.g. [Standard D8s v3](https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series)).
   * A minimum of 24GB available storage for the `/var/lib/docker` directory.
     * If creating your VM through the Azure portal (and not via our [guide](../preparation/azure_vm_creation.md)), you may have insufficient disk space by default. See the [Microsoft docs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/expand-os-disk) for further info.
 
@@ -71,6 +71,12 @@ Log in to your VM prior to starting these steps.
    * Second zone type = `adls2`
    * Second zone name = _press enter for the default value_
 
+1. Enter the HDP Sandbox zone details:
+
+   _Examples:_
+
+   * Plugins = `NONE`
+
 1. Enter the ADLS Gen2 zone details:
 
    _Examples:_
@@ -110,7 +116,7 @@ The HDP sandbox services can take up to 5-10 minutes to start. To check that the
 
    Enter your email address and choose a password you will remember.
 
-1. Click on the **Settings** cog for the **adls2** storage, and fill in the details for your ADLS Gen2 storage account. See the [Info you will require](#info-you-will-require) section for reference.
+1. Click on the **Settings** cog for the **ADLS GEN2** storage, and fill in the details for your ADLS Gen2 storage account. See the [Info you will require](#info-you-will-require) section for reference.
 
 1. Check the **Use Secure Protocol** box.
 
@@ -136,6 +142,10 @@ On the dashboard, create a **HCFS** rule with the following parameters:
    `docker-compose exec -u hdfs sandbox-hdp hdfs dfs -put /etc/services /testdir/test_file`
 
 1. Check that the `test_file` is now located in your `/testdir` directory on your ADLS Gen2 container.
+
+#### Test large data sets (optional)
+
+If you want to replicate larger amounts of data, see our [HDP Sandbox testing](../testing/test_hdp_sandbox.md) guide.
 
 _You have now set up live replication from your HDP Sandbox to your ADLS Gen2 container. Contact [WANdisco](https://wandisco.com/contact) for further information about Fusion and what it can offer you._
 

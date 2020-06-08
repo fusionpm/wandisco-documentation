@@ -27,7 +27,7 @@ To complete this install, you will need:
   * Only [regions that support Signature Version 2](https://docs.aws.amazon.com/general/latest/gr/signature-version-2.html) are currently supported.
 
 * Linux Virtual Machine (e.g. AWS EC2 instance).
-  * Minimum size recommendation = **4 vcpus, 16 GiB memory** (e.g. [t3a.xlarge](https://aws.amazon.com/ec2/instance-types/)).
+  * Minimum size recommendation = **4 vcpus, 32 GiB memory** (e.g. [r5.xlarge](https://aws.amazon.com/ec2/instance-types/)).
   * A minimum of 24GB available storage for the `/var/lib/docker` directory.
 
 * The following services must be installed on the VM:  
@@ -103,7 +103,7 @@ The HDP Sandbox services can take up to 5-10 minutes to start. To check that the
 
 ## Replication
 
-Follow the steps below to demonstrate live replication of HCFS data from the HDP Sandbox to the AWS S3 bucket.
+Follow the steps below to demonstrate live replication of HCFS data from the HDP Sandbox to your AWS S3 bucket.
 
 ### Create replication rule
 
@@ -121,6 +121,10 @@ On the dashboard, create a **HCFS** rule with the following parameters:
    `docker-compose exec -u hdfs sandbox-hdp hdfs dfs -put /etc/services /testdir/test_file`
 
 1. Check that the `test_file` is now located in your `/testdir` directory in your AWS S3 bucket.
+
+#### Test large data sets (optional)
+
+If you want to replicate larger amounts of data, see our [HDP Sandbox testing](../testing/test_hdp_sandbox.md) guide.
 
 _You have now set up live replication from your HDP Sandbox to your AWS S3 bucket. Contact [WANdisco](https://wandisco.com/contact) for further information about Fusion and what it can offer you._
 

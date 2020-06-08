@@ -12,7 +12,7 @@ What this guide will cover:
 
 - Installing WANdisco Fusion and a HDP Sandbox using the [docker-compose](https://docs.docker.com/compose/) tool.
 - Integrating WANdisco Fusion with Azure Databricks.
-- Live replication of sample data and metadata.
+- Live replication of sample data and Hive metadata.
 
 If you would like to try something different with the HDP Sandbox, see:
 
@@ -30,7 +30,7 @@ To complete this install, you will need:
   * You will also need a container created inside this account.
 * Azure Databricks cluster.
 * Azure Virtual Machine (VM).
-  * Minimum size recommendation = **Standard D4 v3 (4 vcpus, 16 GiB memory).**
+  * Minimum size recommendation = **8 vcpus, 32 GiB memory** (e.g. [Standard D8s v3](https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series)).
   * A minimum of 24GB available storage for the `/var/lib/docker` directory.
     * If creating your VM through the Azure portal (and not via our [guide](../preparation/azure_vm_creation.md)), you may have insufficient disk space by default. See the [Microsoft docs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/expand-os-disk) for further info.
 
@@ -146,6 +146,10 @@ Follow the steps below to demonstrate live replication of HCFS data and Hive met
    `docker-compose exec -u hdfs sandbox-hdp hdfs dfs -put /etc/services /apps/hive/warehouse/test_file`
 
 1. Check that the `test_file` is now located in your `/apps/hive/warehouse` directory on your ADLS Gen2 container.
+
+#### Test large data sets (optional)
+
+If you want to replicate larger amounts of data, see our [HDP Sandbox testing](../testing/test_hdp_sandbox.md) guide.
 
 ### Test Hive replication
 

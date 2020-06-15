@@ -1,17 +1,17 @@
 {
   "scripts": {
-    "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
-    "build": "docusaurus-build",
-    "publish-gh-pages": "DEPLOY_ENV=github docusaurus-publish",
-    "write-translations": "docusaurus-write-translations",
-    "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
-  },
-  "devDependencies": {
-    "docusaurus": "^1.14.4"
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy"
   },
   "dependencies": {
+    "@docusaurus/preset-classic": "^2.0.0-alpha.32",
     "favicons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.40",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

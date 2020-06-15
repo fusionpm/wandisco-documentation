@@ -14,3 +14,24 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+/**
+ * You can override the default Infima variables here.
+ * Note: this is not a complete list of --ifm- variables.
+ */
+:root {
+  --ifm-color-primary: #6c757d;
+  --ifm-color-primary-dark: #616971;
+  --ifm-color-primary-darker: #5c636a;
+  --ifm-color-primary-darkest: #4c5258;
+  --ifm-color-primary-light: #778189;
+  --ifm-color-primary-lighter: #7d868f;
+  --ifm-color-primary-lightest: #90989f;
+  --ifm-color-secondary: #6c757d;
+  --ifm-color-secondary-dark: #d36a00;
+  --ifm-color-secondary-darker: #c76400;
+  --ifm-color-secondary-darkest: #a45300;
+  --ifm-color-secondary-light: #ff8202;
+  --ifm-color-secondary-lighter: #ff880e;
+  --ifm-color-secondary-lightest: #ff9931;
+}

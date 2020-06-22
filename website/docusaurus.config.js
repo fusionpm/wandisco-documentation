@@ -1,186 +1,116 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+const path = require("path");
 
 module.exports = {
-  // ...
+  title: "WANdisco docs",
+  tagline: "What's new",
+  url: "https://wandisco.github.io/wandisco-documentation/",
+  baseUrl: "/",
+  favicon: "img/favicon.png",
+  organizationName: "WANdisco",
+  projectName: "wandisco-documentation",
+  themeConfig: {
+    sidebarCollapsible: true,
+    navbar: {
+      title: "WANdisco Fusion",
+      logo: {
+        alt: "WANdisco Fusion Logo",
+        src: "img/favicon.png",
+      },
+      links: [
+        {
+          to: "docs/why-fusion/benefits",
+          label: "Why Fusion?",
+          position: "right",
+        },
+        {
+          to: "docs/quickstarts/installation/quickstart-config",
+          label: "Quickstarts",
+          position: "right",
+        },
+        { to: "docs/docs/doc1", label: "Docs", position: "right" },
+        { to: "docs/glossary/a", label: "Glossary", position: "right" },
+        //  {doc: 'api/api', label: 'API', position: 'right'},
+      //  { to: "docs/help/need_help", label: "Help", position: "right" },
+      ],
+    },
+    algolia: {
+      apiKey: "47ecd3b21be71c5822571b9f59e52544",
+      indexName: "docusaurus-2",
+      algoliaOptions: {},
+    },
+    footer: {
+      links: [
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Getting Started",
+              to: "docs/quickstarts/installation/quickstart-config",
+            },
+            {
+              label: "Product User Guides",
+              href: "https://docs.wandisco.com",
+            },
+            {
+              label: "Knowledge Base",
+              href: "https://community.wandisco.com/s/knowledge-base",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "WANdisco Community",
+              href: "https://community.wandisco.com/",
+            },
+            {
+              label: "Partners",
+              href: "//wandisco.com/partners",
+            },
+            {
+              label: "Twitter",
+              href: "//twitter.com/WANdisco",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Help",
+              href: "docs/help/need_help",
+            },
+            {
+              label: "Blog",
+              href: "https://wandisco.com/blog",
+            },
+            {
+              label: "Developer Blog",
+              href: "https://blogs.wandisco.com/",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} WANdisco, Inc.`,
+    },
+  },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          // Docs folder path relative to website dir.
-          path: '../docs',
-          // Sidebars file relative to website dir.
-          sidebarPath: require.resolve('./sidebars.json'),
+          // It is recommended to set document id as docs home page (`docs/` path).
+          path: "../docs",
+          sidebarPath: require.resolve("./sidebars.js"),
+          // Please change this to your repo.
+          //editUrl:
+          //  "https://github.com/facebook/docusaurus/edit/master/website/",
         },
-        // ...
-      },
-    ],
-    [
-      '@docusaurus/preset-classic',
-      {
         theme: {
-          customCss: require.resolve('./static/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-  // ...
-  themeConfig: {
-    footer: {
-//      logo: {
-//        alt: 'Facebook Open Source Logo',
-//        src: 'https://docusaurus.io/img/oss_logo.png',
-//        href: 'https://opensource.facebook.com/',
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} WANdisco, Inc.`,
-
-//    image: 'img/docusaurus.png',
-//    twitterImage: 'img/undraw_tweetstorm.svg',
-//    ogImage: 'img/undraw_online.svg',
-
-    // Equivalent to `docsSideNavCollapsible`.
-    sidebarCollapsible: true,
-    // ...
-    navbar: {
-      title: 'WANdisco Fusion',
-      logo: {
-        alt: 'WANdisco Fusion Logo',
-        src: 'img/favicon.png',
-      },
-      links: [
-        {doc: 'why-fusion/benefits', label: 'Why Fusion?', position: 'right'},
-        {doc: 'quickstarts/installation/quickstart-config', label: 'Quickstarts', position: 'right'},
-        {doc: 'docs/doc1', label: 'Docs', position: 'right'},
-        {doc: 'glossary/a', label: 'Glossary', position: 'right'},
-        //  {doc: 'api/api', label: 'API', position: 'right'},
-        {doc: 'help/need_help', label: 'Help', position: 'right'},
-      ],
-    },
-    algolia: {
-      apiKey: '47ecd3b21be71c5822571b9f59e52544',
-      indexName: 'docusaurus-2',
-      algoliaOptions: {},
-    },
-  },
 };
-
-// See https://docusaurus.io/docs/site-config for all the possible
-// site configuration options.
-const baseUrl = process.env.DEPLOY_ENV ? 'https://wandisco.github.io/wandisco-documentation/' : '/'
-
-// List of projects/orgs using your project for the users page.
-//const users = [
-//  {
-//    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    //image: '/img/undraw_open_source.svg',
-//    infoLink: 'https://www.wandisco.com',
-//    pinned: true,
-//  },
-//];
-
-const siteConfig = {
-  title: 'WANdisco docs', // Title for your website.
-  tagline: 'What\'s new',
-  url: 'https://wandisco.github.io/wandisco-documentation/ ', // Your website URL
-  baseUrl: baseUrl, // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-
-  // Used for publishing and more
-  projectName: 'wandisco-documentation',
-  organizationName: 'WANdisco',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
-
-  // For no header links in the top nav bar -> headerLinks: [],
-//  headerLinks: [
-//    {doc: 'why-fusion/benefits', label: 'Why Fusion?'},
-//    {doc: 'quickstarts/installation/quickstart-config', label: 'Quickstarts'},
-//    {doc: 'docs/doc1', label: 'Docs'},
-//    {doc: 'glossary/a', label: 'Glossary'},
-  //  {doc: 'api/api', label: 'API'},
-//    {doc: 'help/need_help', label: 'Help'},
-//  ],
-
-  // If you have users set above, you add it here:
-//  users,
-
-  /* path to images for header/footer */
-//  headerIcon: href="img/favicon.png",
-  //footerIcon: href="//www.wandisco.com/static/images/favicon-32x32.png",
-  favicon: href="img/favicon.png",
-
-  /* Colors for website */
-//  colors: {
-//    primaryColor: '#6c757d',
-//    secondaryColor: '#EA7600',
-//  },
-
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
-
-  // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-//  copyright: `Copyright © ${new Date().getFullYear()} WANdisco, Inc.`,
-
-  //highlight: {
-    // Highlight.js theme to use for syntax highlighting in code blocks.
-//    theme: 'default',
-//  },
-
-  // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
-
-  // On page navigation for the current documentation page.
-//  onPageNav: 'separate',
-  // No .html extensions for paths.
-//  cleanUrl: true,
-
-  // Open Graph and Twitter card images.
-//  ogImage: 'img/undraw_online.svg',
-//  twitterImage: 'img/undraw_tweetstorm.svg',
-
-  // For sites with a sizable amount of content, set collapsible to true.
-  // Expand/collapse the links and subcategories under categories.
-// docsSideNavCollapsible: true,
-
-//  algolia: {
-//    apiKey: '56e573413aa88e9ec072a585bec45683',
-//    indexName: 'wandisco',
-//    algoliaOptions: {} // Optional, if provided by Algolia
-//  },
-
-
-
-  // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
-
-  // Show documentation's last update time.
-  // enableUpdateTime: true,
-
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
-};
-
-
-module.exports = siteConfig;

@@ -1,4 +1,7 @@
 {
+  "name": "my-website",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -6,12 +9,22 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/preset-classic": "^2.0.0-alpha.32",
-    "favicons": "^5.5.0"
+    "@docusaurus/core": "^2.0.0-alpha.58",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.58",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
-  "devDependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.40",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

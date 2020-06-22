@@ -30,7 +30,7 @@ module.exports = {
         { to: "docs/docs/doc1", label: "Docs", position: "right" },
         { to: "docs/glossary/a", label: "Glossary", position: "right" },
         //  {doc: 'api/api', label: 'API', position: 'right'},
-        { to: "docs/help/need_help", label: "Help", position: "right" },
+      //  { to: "docs/help/need_help", label: "Help", position: "right" },
       ],
     },
     algolia: {
@@ -66,13 +66,21 @@ module.exports = {
             },
             {
               label: "Partners",
-              href: "//wandisco.com/partners/find",
+              href: "//wandisco.com/partners",
+            },
+            {
+              label: "Twitter",
+              href: "//twitter.com/WANdisco",
             },
           ],
         },
         {
           title: "More",
           items: [
+            {
+              label: "Help",
+              href: "docs/help/need_help",
+            },
             {
               label: "Blog",
               href: "https://wandisco.com/blog",

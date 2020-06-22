@@ -65,9 +65,9 @@ function Home() {
             </Link>
             <Link
               className={clsx("button button--primary button--lg")}
-              to="https://wandisco.tech"
+              to="https://wandisco.com/support/fusion-for-administrators"
             >
-              WANdisco.tech
+              Free Trial
             </Link>
             <Link
               className={clsx("button button--primary button--lg")}

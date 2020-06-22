@@ -58,19 +58,19 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx("button button--primary button--lg")}
+              className={clsx("button button--outline button--secondary button--lg")}
               to={useBaseUrl("docs/quickstarts/installation/quickstart-config")}
             >
               Get Started
             </Link>
             <Link
-              className={clsx("button button--primary button--lg")}
+              className={clsx("button button--outline button--secondary button--lg")}
               to="https://wandisco.com/support/fusion-for-administrators"
             >
               Free Trial
             </Link>
             <Link
-              className={clsx("button button--primary button--lg")}
+              className={clsx("button button--outline button--secondary button--lg")}
               to="https://www.docker.com/get-started"
             >
               Get Docker

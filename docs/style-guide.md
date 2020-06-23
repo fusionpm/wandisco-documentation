@@ -307,19 +307,14 @@ See https://www.markdownguide.org/basic-syntax/#links or https://v2.docusaurus.i
 
 All images should be hosted internally as externally hosted images may move or be deleted.
 
-Images are stored in `/docs/assets/` for docs or `/website/static/img/` for the website.
+Images are stored in `/website/static/img/` for the website.
 
 _Example_
 
 Use:
 ```
-![Image description](../../assets/screenshot.png)
+![Image description](/img/screenshot.png)
 ```
-If:
-
-Document location example: `/docs/quickstarts/installation/document.md`
-
-Screenshot location example: `/docs/assets/screenshot.png`
 
 #### Screenshots
 
@@ -330,13 +325,13 @@ Use dev tools to remove any potentially sensitive info.
 
 _Good example_
 ```
-![Good example](./assets/good.png)
+![Good example](/img/good.png)
 ```
-![Good example](./assets/good.png)
+![Good example](/img/good.png)
 
 _Bad example_
 
-![Bad example](./assets/bad.png)
+![Bad example](/img/bad.png)
 
 #### Diagrams
 These should be used alongside architectural sections, or to illustrate the workflow of a product.

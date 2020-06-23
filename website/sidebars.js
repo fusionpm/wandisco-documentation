@@ -113,4 +113,16 @@ module.exports = {
         "glossary/z"
     ]
   },
+  "LiveData Migrator": {
+      "LiveData Migrator": [
+
+              'livedata-migrator/about',
+              'livedata-migrator/quickstart',
+              'livedata-migrator/getting-started',
+              'livedata-migrator/operation',
+              'livedata-migrator/configuration',
+              'livedata-migrator/command-reference',
+              'livedata-migrator/api-reference'
+            ]
+  }
 };

@@ -4,7 +4,7 @@ module.exports = {
   title: "WANdisco docs",
   tagline: "What's new",
   url: "https://wandisco.github.io/wandisco-documentation/",
-  baseUrl: "/",
+  baseUrl: "/wandisco-documentation/",
   favicon: "img/favicon.png",
   organizationName: "WANdisco",
   projectName: "wandisco-documentation",
@@ -34,8 +34,8 @@ module.exports = {
       ],
     },
     algolia: {
-      apiKey: "47ecd3b21be71c5822571b9f59e52544",
-      indexName: "docusaurus-2",
+      apiKey: "456e573413aa88e9ec072a585bec45683",
+      indexName: "wandisco",
       algoliaOptions: {},
     },
     footer: {

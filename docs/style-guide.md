@@ -313,7 +313,7 @@ _Example_
 
 Use:
 ```
-![Image description](/img/screenshot.png)
+![Image description](/static/img/screenshot.png)
 ```
 
 #### Screenshots
@@ -325,13 +325,13 @@ Use dev tools to remove any potentially sensitive info.
 
 _Good example_
 ```
-![Good example](/img/good.png)
+![Good example](/static/img/good.png)
 ```
-![Good example](/img/good.png)
+![Good example](/static/img/good.png)
 
 _Bad example_
 
-![Bad example](/img/bad.png)
+![Bad example](/static/img/bad.png)
 
 #### Diagrams
 These should be used alongside architectural sections, or to illustrate the workflow of a product.

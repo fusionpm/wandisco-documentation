@@ -34,8 +34,8 @@ module.exports = {
       ],
     },
     algolia: {
-      apiKey: "47ecd3b21be71c5822571b9f59e52544",
-      indexName: "docusaurus-2",
+      apiKey: "456e573413aa88e9ec072a585bec45683",
+      indexName: "wandisco",
       algoliaOptions: {},
     },
     footer: {

@@ -313,7 +313,7 @@ _Example_
 
 Use:
 ```
-![Image description](/wandisco-documentation/img/screenshot.png)
+![Image description](/img/screenshot.png)
 ```
 
 #### Screenshots
@@ -325,13 +325,13 @@ Use dev tools to remove any potentially sensitive info.
 
 _Good example_
 ```
-![Good example](/wandisco-documentation/img/good.png)
+![Good example](/img/good.png)
 ```
-![Good example](/wandisco-documentation/img/good.png)
+![Good example](/img/good.png)
 
 _Bad example_
 
-![Bad example](/wandisco-documentation/img/bad.png)
+![Bad example](/img/bad.png)
 
 #### Diagrams
 These should be used alongside architectural sections, or to illustrate the workflow of a product.

@@ -79,7 +79,7 @@ module.exports = {
           items: [
             {
               label: "Help",
-              href: "docs/help/need_help",
+              to: "docs/help/need_help",
             },
             {
               label: "Blog",

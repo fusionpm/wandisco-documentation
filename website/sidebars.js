@@ -1,6 +1,6 @@
 module.exports = {
 "docs": {
-    "docs.wandisco.com": [
+    "Reference": [
         "docs/doc1"
     ],
     "Architecture": [

@@ -64,13 +64,19 @@ function Home() {
               Get Started
             </Link>
             <Link
-              className={clsx("button button--outline button--secondary button--lg")}
+              className={clsx(
+                "button button--outline button--secondary button--lg",
+                styles.heroLink
+              )}
               to="https://wandisco.com/support/fusion-for-administrators"
             >
               Free Trial
             </Link>
             <Link
-              className={clsx("button button--outline button--secondary button--lg")}
+              className={clsx(
+                "button button--outline button--secondary button--lg",
+                styles.heroLink
+              )}
               to="https://www.docker.com/get-started"
             >
               Get Docker

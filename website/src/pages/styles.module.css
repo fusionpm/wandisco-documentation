@@ -18,6 +18,10 @@
   }
 }
 
+.heroLink {
+  margin-left: 10px;
+}
+
 .buttons {
   display: flex;
   align-items: center;

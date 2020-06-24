@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{175:function(o){o.exports=JSON.parse('{"allTagsPath":"/wandisco-documentation/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/wandisco-documentation/blog/tags/hola"}')}}]);

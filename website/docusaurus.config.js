@@ -1,12 +1,12 @@
 const path = require("path");
 
-const baseUrl = process.env.DEPLOY_ENV ? 'https://wandisco.github.io/wandisco-documentation/' : '/'
+//const baseUrl = process.env.DEPLOY_ENV ? 'https://wandisco.github.io/wandisco-documentation/' : '/'
 
 module.exports = {
   title: "WANdisco docs",
   tagline: "What's new",
   url: "https://wandisco.github.io/wandisco-documentation/",
-  baseUrl: baseUrl,
+  baseUrl: "/wandisco-documentation/",
   favicon: "img/favicon.png",
   organizationName: "WANdisco",
   projectName: "wandisco-documentation",

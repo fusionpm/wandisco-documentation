@@ -4,7 +4,7 @@ title: The Benefits of WANdisco Fusion
 sidebar_label: Benefits
 ---
 
-![world map](/img/worldmap.jpg "")
+![world map](/wandisco-documentation/img/worldmap.jpg "")
 
 ### Business continuity in a distributed environment
 

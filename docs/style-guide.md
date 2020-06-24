@@ -313,7 +313,7 @@ _Example_
 
 Use:
 ```
-![Image description](/img/screenshot.png)
+![Image description](/wandisco-documentation/img/screenshot.png)
 ```
 
 Due to the migration to Docusaurus 2, at time of writing, images will not be visible in the markdown pages viewed in GitHub. See the Docusaurus docs themselves as an example:
@@ -330,13 +330,13 @@ Use dev tools to remove any potentially sensitive info.
 
 _Good example_
 ```
-![Good example](/img/good.png)
+![Good example](/wandisco-documentation/img/good.png)
 ```
-![Good example](/img/good.png)
+![Good example](/wandisco-documentation/img/good.png)
 
 _Bad example_
 
-![Bad example](/img/bad.png)
+![Bad example](/wandisco-documentation/img/bad.png)
 
 #### Diagrams
 These should be used alongside architectural sections, or to illustrate the workflow of a product.

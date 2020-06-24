@@ -316,6 +316,11 @@ Use:
 ![Image description](/img/screenshot.png)
 ```
 
+Due to the migration to Docusaurus 2, at time of writing, images will not be visible in the markdown pages viewed in GitHub. See the Docusaurus docs themselves as an example:
+https://github.com/facebook/docusaurus/blob/master/website/docs/introduction.md#a-better-docusaurus-is-coming-to-town
+
+They are still visible on the main site and when building locally using NPM/yarn.
+
 #### Screenshots
 
 Use only when absolutely necessary, the UI should be clear enough. Using screenshots also greatly increases the effort needed to keep the docs up to date.

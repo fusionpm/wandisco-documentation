@@ -1,10 +1,11 @@
 ---
 id: s3-adlsg2_bi_lm
-title: AWS S3 and Azure Data Lake Storage Gen2 (bi-directional) with LiveMigrator
+title: AWS S3 and Azure Data Lake Storage Gen2 with LiveMigrator
 sidebar_label: AWS S3 & ADLS Gen2 with LiveMigrator
 ---
 
-Use this quickstart if you want to configure Fusion to replicate between an AWS S3 bucket and an ADLS Gen2 container in either direction using WANdisco LiveMigrator.
+Use this quickstart if you want to configure Fusion to migrate data from an AWS S3 bucket to an ADLS Gen2 container, or vice versa, using WANdisco LiveMigrator. 
+The set up is the same for either scenario, just chose the direction when starting your migration.
 
 What this guide will cover:
 

@@ -29,7 +29,7 @@ If any emergency fixes are required, these can be done via feature branch/PR fro
 
 This only changes the [GitHub version of the docs](https://github.com/WANdisco/wandisco-documentation/tree/develop/docs), the docs team will control promoting to the [live/Docusaurus version](https://wandisco.github.io/wandisco-documentation/).
 
-![Branching strategy](./assets/branching.jpg)
+![Branching strategy](../website/static/img/branching.jpg)
 
 
 ## What it should sound like

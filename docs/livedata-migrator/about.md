@@ -16,7 +16,7 @@ LiveData Migrator _migrates changing data_ at scale from HDFS to your choice of 
 
 </div>
 
-Use WANdisco's LiveData platform for risk-free, automated, and scalable migration of Hadoop data to cloud storage or other targets. Migrate your data while your business applications continue to run. LiveData Migrator migrates data lake content easily and simply for architects, adminstrators and operators. It is *Immediate*, *Live*, and *Scalable*.
+Use WANdisco's LiveData platform for risk-free, automated, and scalable migration of Hadoop data to cloud storage or other targets. Migrate your data while your business applications continue to run. LiveData Migrator migrates data lake content easily and simply for architects, administrators and operators. It is *Immediate*, *Live*, and *Scalable*.
 
 **Immediate**: Deployment, removal, initiating migration, getting feedback, responding to environmental differences, and general operations are all _immediate_, providing an excellent user experience and eliminating any operational risk during migration. Begin migrating your data in seconds without making any changes to your on-premises data lake configuration or infrastructure.
 
@@ -51,4 +51,4 @@ By removing the need to halt your data processing and modifications, you are fre
 
 If you just want to use LiveData Migrator immediately, follow the [Quickstart](./quickstart.md) guide.
 
-You can be fully prepared by following all the [prerequisites](./prereq.md) to prepare your environment for installation and successful data migrations. You can then learn how to [run LiveData Migrator](./getting-started.md).
+You can be fully prepared by following all the [prerequisites](./getting-started.md#prerequisites) to prepare your environment for installation and successful data migrations. You can then learn how to [run LiveData Migrator](./getting-started.md).

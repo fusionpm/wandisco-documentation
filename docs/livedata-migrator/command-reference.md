@@ -1053,6 +1053,19 @@ OPTIONS
 * **`--description`** A user-friendly description for the policy
 * **`--regex`** A regular expression in a syntax similar to that used by Perl
 
+#### Examples
+
+```
+WANdisco LiveData Migrator >> exclusion add regex --description "No paths that start with test"  --id exclusion1 --regex ^test\.*
+{
+  "type" : "RegexExclusion",
+  "id" : "exclusion1",
+  "description" : "No paths that start with test",
+  "fsRestriction" : false,
+  "regex" : "^test.*"
+}
+```
+
 ----
 ### `exclusion del`
 

@@ -176,7 +176,7 @@ When run from the command line, LiveData Migrator will use the initial ticket-gr
 1. Execute the `kinit` command to obtain a Kerberos ticket-granting ticket, then
 1. [Run LiveData Migrator from the command-line](#option-1-command-line-operation).
 
-When run as a system service, Live Data Migrator will honor the [configuration for Kerberos security](./configuration.md#kerberos-integration) in `application.properties`.
+When run as a system service, LiveData Migrator will honor the [configuration for Kerberos security](./configuration.md#kerberos-integration) in `application.properties`.
 1. Configure your Kerberos security to accept credentials in a keytab file available to the user identity that will be used to run LiveData Migrator (typically the `hdfs` user)
 1. Configure LiveData migrator properties for Kerberos integration, then
 1. [Run LiveData Migrator as a system service](#option-2-system-service-installation).
